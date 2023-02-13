@@ -12,7 +12,6 @@ import java.util.Arrays;
 
 /**
  * MyBatis-Plus 代码生成类
- * ContentCodeGenerator 内容管理模块生成类
  */
 public class ContentCodeGenerator {
 
@@ -31,7 +30,8 @@ public class ContentCodeGenerator {
 			 "course_market",
 			 "teachplan",
 			 "teachplan_media",
-			 "course_teacher"
+			 "course_teacher",
+			"course_category"
 //			 "course_publish",
 //			 "course_publish_pre"
 //			"course_category"
@@ -69,6 +69,7 @@ public class ContentCodeGenerator {
 		dsc.setDbType(DbType.MYSQL);
 		dsc.setUrl("jdbc:mysql://192.168.101.65:3306/xc148_" + SERVICE_NAME
 				+ "?serverTimezone=UTC&useUnicode=true&useSSL=false&characterEncoding=utf8");
+//		dsc.setDriverName("com.mysql.jdbc.Driver");
 		dsc.setDriverName("com.mysql.cj.jdbc.Driver");
 		dsc.setUsername(DATA_SOURCE_USER_NAME);
 		dsc.setPassword(DATA_SOURCE_PASSWORD);
